@@ -4,3 +4,4 @@ base:
     - base.sanity
     - users
     - sudoers
+    - ssh
