@@ -13,6 +13,7 @@ server {
 
     ssl_session_cache    shared:SSL:10m;
     ssl_session_timeout  2h;
+    ssl_session_tickets  off;
     ssl_stapling         on;
     ssl_stapling_verify  on;
 
