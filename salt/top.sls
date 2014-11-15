@@ -1,5 +1,5 @@
 base:
-'*':
-  - base.auto-highstate
-  - base.repo
-  - base.sanity
+  '*':
+    - base.auto-highstate
+    - base.repo
+    - base.sanity
