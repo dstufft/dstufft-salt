@@ -12,6 +12,7 @@
 {% for group in user_config.groups %}
       - {{ group }}
 {% endfor %}
+{% endif %}
 
 
 {{ user_name }}-ssh_dir:
