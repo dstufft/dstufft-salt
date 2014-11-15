@@ -1,5 +1,10 @@
 server {
     listen 80 default_server;
+    server_name caremad.io www.caremad.io;
+    return 301 https://caremad.io$request_uri;
+}
+
+server {
     listen 443 ssl spdy;
 
     ssl_certificate      /etc/ssl/private/star.caremad.io.pem;
