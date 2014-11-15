@@ -6,3 +6,4 @@ base:
     - sudoers
     - ssh
     - unattended-upgrades
+    - firewall
