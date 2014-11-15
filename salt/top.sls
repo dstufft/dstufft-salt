@@ -7,3 +7,6 @@ base:
     - ssh
     - unattended-upgrades
     - firewall
+
+  'shitbird.caremad.io':
+    - blog
