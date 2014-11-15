@@ -7,13 +7,7 @@
     - home: /home/{{ user_name }}
     - createhome: True
     - shell: {{ user_config.get("shell", "/bin/bash") }}
-    - groups: {{ groups }}
-{% if groups %}
-    - require:
-{% for group in groups %}
-      - group: {{ group }}
-{% endfor %}
-{% endif %}
+
 
 {{ user_name }}-ssh_dir:
   file.directory:
