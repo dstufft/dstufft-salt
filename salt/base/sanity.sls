@@ -3,6 +3,7 @@ niceties:
     - pkgs:
       - htop
       - traceroute
+      - zsh
 
 time-sync:
   pkg.installed:
