@@ -5,3 +5,4 @@ base:
     - users
     - sudoers
     - ssh
+    - unattended-upgrades
