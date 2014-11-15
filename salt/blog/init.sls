@@ -4,6 +4,7 @@ include:
 
 /srv/blog:
   file.directory:
+    - mode: 775
     - user: www-data
     - group: www-data
 
