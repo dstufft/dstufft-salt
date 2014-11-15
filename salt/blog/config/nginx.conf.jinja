@@ -24,6 +24,8 @@ server {
     ssl_stapling         on;
     ssl_stapling_verify  on;
 
+    add_header Strict-Transport-Security "max-age=315360000; includeSubDomains; preload";
+
     return 301 https://caremad.io$request_uri;
 }
 
@@ -46,6 +48,8 @@ server {
     ssl_session_tickets  off;
     ssl_stapling         on;
     ssl_stapling_verify  on;
+
+    add_header Strict-Transport-Security "max-age=315360000; includeSubDomains; preload";
 
     root /srv/blog;
 }
