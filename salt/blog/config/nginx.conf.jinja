@@ -53,6 +53,10 @@ server {
 
     root /srv/blog;
 
+    # Enable GZIP settings
+    gzip_static on;
+    gzip_vary   on;
+
     # Rewrite some old post locations to new locations
     rewrite ^/blog/setup-vs-requirement/$ /2013/07/setup-vs-requirement/ permanent;
     rewrite ^/blog/packaging-signing-not-holy-grail/$ /2013/07/packaging-signing-not-holy-grail/ permanent;
