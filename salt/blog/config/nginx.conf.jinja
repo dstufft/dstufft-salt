@@ -52,4 +52,11 @@ server {
     add_header Strict-Transport-Security "max-age=315360000; includeSubDomains; preload";
 
     root /srv/blog;
+
+    # Rewrite some old post locations to new locations
+    rewrite ^/blog/setup-vs-requirement/$ /2013/07/setup-vs-requirement/ permanent;
+    rewrite ^/blog/packaging-signing-not-holy-grail/$ /2013/07/packaging-signing-not-holy-grail/ permanent;
+    rewrite ^/blog/a-look-at-pypi-downloads/$ /2013/10/a-look-at-pypi-downloads/ permanent;
+    rewrite ^/blog/how-has-python-packaging-failed-you/$ /2013/11/how-has-python-packaging-failed-you/ permanent;
+    rewrite ^/blog/crate-io-new-ownership/$ /2014/03/crate-io-new-ownership/ permanent;
 }
