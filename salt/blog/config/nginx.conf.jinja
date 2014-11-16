@@ -59,4 +59,8 @@ server {
     rewrite ^/blog/a-look-at-pypi-downloads/$ /2013/10/a-look-at-pypi-downloads/ permanent;
     rewrite ^/blog/how-has-python-packaging-failed-you/$ /2013/11/how-has-python-packaging-failed-you/ permanent;
     rewrite ^/blog/crate-io-new-ownership/$ /2014/03/crate-io-new-ownership/ permanent;
+
+    location = /feed/ {
+        alias /srv/blog/index.xml;
+    }
 }
