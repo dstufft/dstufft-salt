@@ -61,6 +61,7 @@ server {
     rewrite ^/blog/crate-io-new-ownership/$ /2014/03/crate-io-new-ownership/ permanent;
 
     location = /feed/ {
-        alias /srv/blog/index.xml;
+        alias /srv/blog/;
+        index index.xml;
     }
 }
